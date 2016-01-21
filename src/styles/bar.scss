@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+// サンプルなので適当です
+
+// 最初に MQPacker 向けにメディアクエリーまとめたあとの順番を指定しておく
+// node-sass だとこのコメントが消されてしまうので、実際のコードの中で書く順番を気をつけないといけない
+@media screen and (max-width: 1000px) { /* don't remove this comment */ }
+@media screen and (max-width: 2000px) { /* don't remove this comment */ }
+@media screen and (max-width: 3000px) { /* don't remove this comment */ }
+
+// ここからコード
+.bar {
+    font-size: 0;
+
+    @media screen and (max-width: 3000px) {
+        font-size: 3em;
+    }
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1em;
+    }
+
+    @media screen and (max-width: 2000px) {
+        font-size: 2em;
+    }
+}
+
+.barboo {
+    margin-top: 0;
+
+    @media screen and (max-width: 3000px) {
+        margin-top: 3em;
+    }
+
+    @media screen and (max-width: 2000px) {
+        margin-top: 2em;
+    }
+
+    @media screen and (max-width: 1000px) {
+        margin-top: 1em;
+    }
+}

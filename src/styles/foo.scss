@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.prefix-title-sub {
+    font-size: 20px;
+
+    @media screen and (max-width: 855px) {
+        font-size: 20px;
+    }
+}
+
+.prefix-title-colum {
+    font-size: 24px;
+
+    @media screen and (max-width: 855px) {
+        font-size: 18px;
+    }
+}
+
+.prefix-title-accent {
+    font-size: 14px;
+    font-weight: bold;
+
+    span {
+        color: #f00;
+        font-size: 0.75em;
+    }
+
+    @media screen and (max-width: 855px) {
+        font-size: 16px;
+    }
+}

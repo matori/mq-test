@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// サンプルなので適当です
+
+// 最初に MQPacker 向けにメディアクエリーまとめたあとの順番を指定しておく
+// node-sass だとこのコメント消されてしまうので、実際のコードの中で書く順番を気をつけないといけない
+@media (min-width: 500px) {  /* don't remove this comment */ }
+@media (min-width: 1000px) { /* don't remove this comment */ }
+@media (min-width: 2000px) { /* don't remove this comment */ }
+@media (min-width: 3000px) { /* don't remove this comment */ }
+
+// ここからコード
+.buz {
+    display: flex;
+    font-size: 0;
+
+    @media (min-width: 3000px) {
+        font-size: 3em;
+    }
+
+    @media (min-width: 1000px) {
+        font-size: 1em;
+    }
+
+    @media (min-width: 2000px) {
+        font-size: 2em;
+    }
+
+    @media (min-width: 500px) {
+        font-size: 0.5em;
+    }
+}
+
+.buzboo {
+    margin-top: 0;
+
+    @media (min-width: 3000px) {
+        margin-top: 3em;
+    }
+
+    @media (min-width: 2000px) {
+        margin-top: 2em;
+    }
+
+    @media (min-width: 500px) {
+        margin-top: 0.5em;
+    }
+
+    @media (min-width: 1000px) {
+        margin-top: 1em;
+    }
+}
